@@ -23,7 +23,7 @@ class DuaCard extends StatelessWidget {
     return Column(
       children: [
         Container(
-          padding: const EdgeInsets.all(8),
+          padding: const EdgeInsets.all(5),
           width: 80,
           height: 30,
           decoration: BoxDecoration(

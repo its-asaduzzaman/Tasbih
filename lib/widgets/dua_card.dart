@@ -45,6 +45,13 @@ class DuaCard extends StatelessWidget {
           decoration: BoxDecoration(
             color: Styles.cardColor,
             borderRadius: BorderRadius.circular(20),
+            boxShadow: [
+              BoxShadow(
+                color: Styles.cardColor,
+                blurRadius: 2,
+                spreadRadius: 1,
+              ),
+            ],
           ),
           child: Column(
             children: [

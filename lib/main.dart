@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tasbih/Screens/home_screen.dart';
+import 'package:tasbih/widgets/dua_card.dart';
+import '../utils/app_style.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,26 +32,8 @@ class Dua extends StatefulWidget {
 }
 
 class _DuaState extends State<Dua> {
-  List images = ['1.png', '2.png'];
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: PageView.builder(
-          scrollDirection: Axis.vertical,
-          itemCount: images.length,
-          itemBuilder: (_, index) {
-            return Container(
-              width: double.maxFinite,
-              height: double.maxFinite,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("img/" + images[index]),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            );
-          }),
-    );
+    return const HomeScreen();
   }
 }
-

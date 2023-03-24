@@ -24,8 +24,8 @@ class DuaCard extends StatelessWidget {
       children: [
         Container(
           padding: const EdgeInsets.all(5),
-          width: 80,
-          height: 30,
+          width: 100,
+          height: 40,
           decoration: BoxDecoration(
             color: Styles.smallCardColor,
             borderRadius: BorderRadius.circular(10),
@@ -39,9 +39,8 @@ class DuaCard extends StatelessWidget {
         Container(
           margin:
               const EdgeInsets.only(left: 25, right: 25, bottom: 30, top: 3),
-          padding: const EdgeInsets.only(top: 8),
+          padding: const EdgeInsets.all(20),
           width: size.width,
-          height: 120,
           decoration: BoxDecoration(
             color: Styles.cardColor,
             borderRadius: BorderRadius.circular(20),
@@ -60,14 +59,14 @@ class DuaCard extends StatelessWidget {
                 style: Styles.textStyle,
               ),
               const SizedBox(
-                height: 10,
+                height: 20,
               ),
               Text(
                 banglaText,
                 style: Styles.headLineStyle3,
               ),
               const SizedBox(
-                height: 10,
+                height: 20,
               ),
               Text(
                 onubadText,
